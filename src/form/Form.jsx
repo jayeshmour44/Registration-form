@@ -67,7 +67,7 @@ const Form = () => {
 
       console.log('Form submitted:', formData);
       // navigate to /success and pass data via state
-      navigate('/success', { state: { formData: passableData } });
+     navigate('/dashboard', { state: { formData: passableData } });
     }
     };
 
