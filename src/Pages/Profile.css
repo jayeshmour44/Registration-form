@@ -1,0 +1,51 @@
+.profile-container {
+  max-width: 500px;
+  margin: 50px auto;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.profile-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #343a40;
+  font-size: 26px;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #6c63ff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.profile-details {
+  line-height: 1.8;
+  font-size: 16px;
+  color: #212529;
+}
+
+.profile-details p {
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: background 0.2s ease;
+}
+
+.profile-details p:hover {
+  background: #f1f1ff;
+}
+
+.profile-details strong {
+  color: #6c63ff;
+  font-weight: 600;
+}

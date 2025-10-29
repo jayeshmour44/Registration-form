@@ -1,13 +1,95 @@
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  background-color: #1e1e2f;
-  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Left section (Dashboard title) */
+.left-section h1 {
+  margin: 0;
+  color: #333;
+}
+
+/* Search bar in the middle */
+.search-container {
   display: flex;
   align-items: center;
-  padding: 0 20px;
-  z-index: 1000;
+  gap: 10px;
 }
+
+.search-input {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.search-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/* Right section (notifications + user) */
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* adjust spacing between name and button */
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Notification bell */
+.notification {
+  position: relative;
+  cursor: pointer;
+}
+
+.bell {
+  font-size: 22px;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-size: 10px;
+}
+
+/* User profile */
+.username {
+  font-weight: 500;
+  color: #333;
+}
+
+.logout-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #e60000;
+}
+

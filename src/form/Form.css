@@ -1,63 +1,93 @@
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 10px;
-    background: linear-gradient(to right, #63d39f, #5673f2);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Container styling */
+.form-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
-.first{
-    background: #ffffffad;
-    padding: 40px 30px;
-    border-radius: 10px;
-    box-shadow: 0px 10px 20px;
-    width: 100%;
-    max-width: 350px;
+/* Form heading */
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 28px;
+  font-weight: 600;
 }
 
-.form-title{
-    text-align: center;
-    margin-bottom: 30px;
-    color: #333;
-    font-size: 26px;
-    font-weight: 600;
+/* Input fields */
+.form-container input {
+  width: 100%;
+  max-width: 460px;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.login{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+/* Input focus effect */
+.form-container input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
 }
 
-.login label{
+/* Error message */
+.error {
+  color: #ff4d4d;
+  font-size: 13px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Submit button */
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover */
+.form-container button:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+}
+
+/* Button active effect */
+.form-container button:active {
+  transform: translateY(1px);
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .form-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .form-container h2 {
+    font-size: 24px;
+  }
+
+  .form-container input {
+    font-size: 14px;
+  }
+
+  .form-container button {
     font-size: 15px;
-    color: #666565;
-    margin-bottom: 7px;
+  }
 }
-
-.login input{
-    padding: 7px 10px;
-    border: 2px solid #ccc;
-    border-radius: 9px;
-    font-size: 13px;
-}
-
-.login input:focus{
-    border-color: #2d5784cb;
-    outline: none;
-    
-}
-
-.login input[type=file]{
-    padding: 5px 2px;
-    border: none;
-}
-
-.btn{
-   display: flex;
-   justify-content: center;
-
-}
-
