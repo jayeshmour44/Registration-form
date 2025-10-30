@@ -15,7 +15,7 @@ const Settings = () => {
   });
 
   // ✅ Load data from localStorage when component mounts
-  useEffect(() => {
+  /*useEffect(() => {
     const storedName = localStorage.getItem('userName');
     const storedEmail = localStorage.getItem('userEmail');
     const storedMobile = localStorage.getItem('userMobile');
@@ -27,7 +27,7 @@ const Settings = () => {
         mobile: storedMobile || '',
       });
     }
-  }, []);
+  }, []);*/
 
   // handle profile input
   const handleProfileChange = (e) => {
