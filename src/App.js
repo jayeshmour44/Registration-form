@@ -5,6 +5,7 @@ import DashboardLayout from './Components/DashboardLayout';
 import Dashboard from './Pages/Dashboard';
 import Profile from './Pages/Profile';
 import Settings from './Pages/Settings';
+import UserManagement from './Pages/UserManagement';
 import './App.css';
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         <Route index element={<Dashboard />} />
         <Route path="profile" element={<Profile />} />
         <Route path="settings" element={<Settings />} />
+        <Route path="users" element = {<UserManagement/>} />
       </Route>
     </Routes>
   );

@@ -1,0 +1,72 @@
+.user-container {
+  padding: 20px;
+}
+
+.user-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.user-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.user-form button {
+  padding: 8px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.user-form button:hover {
+  background: #0056b3;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.user-table th {
+  background: #007bff;
+  color: white;
+}
+
+.user-table button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.user-table .edit {
+  background: #ffc107;
+  color: white;
+  margin-right: 5px;
+}
+
+.user-table .delete {
+  background: #dc3545;
+  color: white;
+}
+
+.user-table .edit:hover {
+  background: #e0a800;
+}
+
+.user-table .delete:hover {
+  background: #c82333;
+}

@@ -53,7 +53,7 @@ const Form = () => {
 
   return (
     <div className="form-container">
-      <h2>Register</h2>
+      <h2>Login Form</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
