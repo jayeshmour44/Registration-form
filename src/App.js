@@ -7,6 +7,8 @@ import Profile from './Pages/Profile';
 import Settings from './Pages/Settings';
 import UserManagement from './Pages/UserManagement';
 import FetchPhotos from './Pages/FetchPhotos';
+import UsersTable from './Pages/UsersTable'
+import Post from './Pages/Post'
 import './App.css';
 
 const App = () => {
@@ -22,6 +24,9 @@ const App = () => {
         <Route path="settings" element={<Settings />} />
         <Route path="users" element = {<UserManagement/>} />
         <Route path="FetchPhotos" element = {<FetchPhotos />} />
+        <Route path="UsersTable" element = {<UsersTable/>} />
+        <Route path="Post" element = {<Post/>} />
+
       </Route>
     </Routes>
   );
