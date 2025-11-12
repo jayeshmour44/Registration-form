@@ -18,7 +18,7 @@ useEffect(() =>{
     postData();
 }, [])
 
- return (
+return (
     <div>
       <h2>Posts Data</h2>
       <table border="3" cellPadding="9" cellSpacing="3">

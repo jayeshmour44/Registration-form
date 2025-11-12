@@ -9,6 +9,7 @@ import UserManagement from './Pages/UserManagement';
 import FetchPhotos from './Pages/FetchPhotos';
 import UsersTable from './Pages/UsersTable'
 import Post from './Pages/Post'
+import TodoList from './Pages/TodoList'
 import './App.css';
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="FetchPhotos" element = {<FetchPhotos />} />
         <Route path="UsersTable" element = {<UsersTable/>} />
         <Route path="Post" element = {<Post/>} />
+        <Route path="TodoList" element = {<TodoList/>} />
 
       </Route>
     </Routes>
